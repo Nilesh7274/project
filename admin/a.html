@@ -1,0 +1,113 @@
+<?php
+include 'conn.php';
+
+session_start();
+$pr_id=$_REQUEST['id'];
+
+    $q1="select * from notes where id='$pr_id'";
+    $ress=mysqli_query($conn,$q1);
+    $row=mysqli_fetch_array($ress);
+
+if(isset($_FILES['file']))
+{
+
+    
+//$res= move_uploaded_file($tmp_name,$dest);
+
+$file_name=$_FILES['file']['name'];
+$file_tmp =$_FILES['file']['tmp_name'];
+
+
+$path="notes".$file_name;
+echo $path;
+
+
+move_uploaded_file($file_tmp,"notes/".$file_name);
+echo" <script>alert(' succesfuly');window.location='file.php?id=$pr_id';</script>";
+$type="file";
+}
+else{
+    echo" <script>alert(' not inserted');window.location='file.php?id=$pr_id';</script>";
+   
+}
+
+if(isset($_REQUEST['folder']))
+{
+    $type="folder";
+    $folder_name=$_REQUEST['folder'];
+ 
+
+    
+$techer_name=$_SESSION["admin_name"];
+
+$q="insert into notes values('','$folder_name','$type','$pr_id','','','$teacher_name')";
+$res=mysqli_query($conn,$q);
+if($res)
+{
+   
+  echo" <script>alert(' succesfuly');window.location='file.php?id=$pr_id';</script>";
+}
+else
+{
+  echo" <script>alert(' not inserted');window.location='file.php?id=$pr_id';</script>";
+   
+}
+}
+?>
+
+
+
+<div class=col-md-3>
+  <a href='file.php?id=<?php echo $folder['id']; ?>'>
+
+  <div class='card bg-secondary text-white'>
+          <div class='card-body'style="text-align: center; " >
+          
+          <i  style="font-size:40px;" class="bi bi-folder-fill bi bi-align-center" > <h5 > <?php echo $folder['name']; ?></h5></i>
+          </div>
+          <a  href="/resource/pdf.png"><span class="badge rounded-pill bg-danger p-2 ms-2">Delete</span></a>
+
+      </div>
+      </a>
+
+  </div>
+
+
+
+  <div class="row">
+    <!-- Area Chart -->
+<div  class="col-xl-12 col-lg-12">
+  <div  style="overflow-y:scroll ;" class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+        
+            <!-- Card Body -->
+            
+            <div  class="card-body overflow-y" id="chat" style="height: 400px; overflow-y:scroll;">
+            <table id="myTable">
+          <thead>
+          <tr>
+            <th>File Name</th>
+            <th>time</th>
+            <th>teacher Name</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <?php
+          
+              $path='admin/'.$folder['path'];
+              
+              
+            echo "<tr>";
+             
+                echo "<td> ". $folder["name"]."</td>";
+                echo "<td> ". $folder["time"]."</td>";
+                echo "<td> ". $folder["teacher"]."</td>";
+                echo "<td> <a  href=\"$path\"><span class='badge rounded-pill bg-danger p-2 ms-2'>{$folder['name']}</td>";
+                  
+            echo "</tr>";
+              
+            }
+          }
+         
+          ?>
