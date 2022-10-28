@@ -339,10 +339,33 @@ if(!isset($_SESSION['admin']))
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-menu-button-wide"></i><span>Attendence</span><i class="bi bi-chevron-down ms-auto"></i>
+      <i class="bi bi-menu-button-wide"></i><span>ATTENDANCE</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
     <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      
+		<li>
+            <a href="attendance-get.php">
+              <i class="bi bi-circle"></i><span>GET ATTENDANCE</span>
+            </a>
+          </li>
+		  <li>
+            <a href="attendance-table.php">
+              <i class="bi bi-circle"></i><span>VIEW TODAY'S ATTENDANCE</span>
+
+            </a>
+          </li>
+		  <li>
+            <a href="attendance-search.php">
+              <i class="bi bi-circle"></i><span>SEARCH ATTENDANCE</span>
+
+            </a>
+          </li>
+		  <li>
+            <a href="attendance-report.php">
+              <i class="bi bi-circle"></i><span>ATTENDANCE REPORT</span>
+
+            </a>
+          </li>
+		  
     </ul>
   </li><!-- End Components Nav -->
 
@@ -418,6 +441,12 @@ if(!isset($_SESSION['admin']))
     <a class="nav-link collapsed" href="profile.php">
       <i class="bi bi-person"></i>
       <span>Profile</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="login.php">
+      <i class="bi bi-box-arrow-right"></i>
+      <span>Logout</span>
     </a>
   </li><!-- End Profile Page Nav -->
 

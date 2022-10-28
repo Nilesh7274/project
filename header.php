@@ -330,13 +330,18 @@ if(!isset($_SESSION['student']))
   </li><!-- End Dashboard Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-menu-button-wide"></i><span>Attendence</span><i class="bi bi-chevron-down ms-auto"></i>
-    </a>
-    <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      
-    </ul>
-  </li><!-- End Components Nav -->
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>ATTENDANCE</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+           <li>
+            <a href="attendance-view.php">
+              <i class="bi bi-circle"></i><span>VIEW ATTENDANCE</span>
+            </a>
+          </li>
+         
+        </ul>
+      </li><!-- End Components Nav -->
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
@@ -400,6 +405,12 @@ if(!isset($_SESSION['student']))
     <a class="nav-link collapsed" href="profile.php">
       <i class="bi bi-person"></i>
       <span>Profile</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="login.php">
+      <i class="bi bi-box-arrow-right"></i>
+      <span>Logout</span>
     </a>
   </li><!-- End Profile Page Nav -->
 
