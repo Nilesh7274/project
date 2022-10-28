@@ -4,11 +4,6 @@
 
 include 'header.php';
 
-if(!isset($_SESSION['student']))
-{
- // echo "You Are LogOut";
-  header('location:login.php');
-}
 
 
 ?>
