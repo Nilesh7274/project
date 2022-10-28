@@ -3,8 +3,8 @@ include 'conn.php';
 
 session_start();
 
-
-$teacher_name = $_SESSION["admin_name"];
+$row=$_SESSION["admin"];
+$teacher_name = $row["admin_name"];
   // echo $teacher_name;
 
 $pr_id=$_REQUEST['pr_id'];

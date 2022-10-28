@@ -375,21 +375,11 @@ if(!isset($_SESSION['admin']))
     </a>
     <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       
-      <li>
-        <a href="upload.php">
-          <i class="bi bi-circle"></i><span>Upload</span>
-        </a>
-      </li>
-      <li>
         <a href="file.php">
           <i class="bi bi-circle"></i><span>file create</span>
         </a>
       </li>
-      <li>
-        <a href="file_view.php">
-          <i class="bi bi-circle"></i><span>file view</span>
-        </a>
-      </li>
+      
     </ul>
   </li><!-- End Forms Nav -->
 
