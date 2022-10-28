@@ -3,7 +3,7 @@ include 'conn.php';
 
 $id=$_REQUEST['id'];
 $q="delete from notes where id=".$id;
-$q="delete from notes where pr_id=".$id;
+//$q="delete from notes where pr_id=".$id;
 //$q="DELETE FROM notes WHERE id=".$id." and pr_id=".$id;
 //$q1"delete from notes where pr_id=".$id ;
 //DELETE FROM `notes` WHERE id=1 and pr_id=
