@@ -3,14 +3,16 @@
 	</head>
 	<body>
 		<?php
-			//session_start();
+			
 			include'header.php'
 		?>
 	<?php
 			  
 			  //include 'db.php'
 			  $connect=mysqli_connect('localhost','root','','cloudclass');
-			  $roll_no=$_SESSION['rollno'];
+			 
+			  $student=$_SESSION['student'];
+			  $roll_no=$student['rollno'];
 			  date_default_timezone_set("Asia/kolkata");
 			  $date=date('y-m-d');
 			  $get_working_days="select DISTINCT(date) from attendance where date between '2022-10-01' and '$date'";
