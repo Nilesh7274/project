@@ -363,15 +363,11 @@ if(!isset($_SESSION['student']))
     </a>
     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="tables-general.html">
-          <i class="bi bi-circle"></i><span>General Tables</span>
+        <a href="attempt_test.php">
+          <i class="bi bi-circle"></i><span>Start Test</span>
         </a>
       </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-circle"></i><span>Data Tables</span>
-        </a>
-      </li>
+      
     </ul>
   </li><!-- End Tables Nav -->
 

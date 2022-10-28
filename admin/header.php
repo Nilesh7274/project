@@ -389,15 +389,11 @@ if(!isset($_SESSION['admin']))
     </a>
     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="tables-general.html">
-          <i class="bi bi-circle"></i><span>General Tables</span>
+        <a href="add_test1.php">
+          <i class="bi bi-circle"></i><span>Add Test</span>
         </a>
       </li>
-      <li>
-        <a href="tables-data.html">
-          <i class="bi bi-circle"></i><span>Data Tables</span>
-        </a>
-      </li>
+      
     </ul>
   </li><!-- End Tables Nav -->
 
