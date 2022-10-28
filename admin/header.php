@@ -408,20 +408,21 @@ if(!isset($_SESSION['admin']))
     </a>
     <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="icons-bootstrap.html">
-          <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+        <a href="Add_event-form.php">
+          <i class="bi bi-circle"></i><span>ADD EVENT</span>
         </a>
       </li>
       <li>
-        <a href="icons-remix.html">
-          <i class="bi bi-circle"></i><span>Remix Icons</span>
+        <a href="Add_memories.php">
+          <i class="bi bi-circle"></i><span>ADD MEMORIES</span>
         </a>
       </li>
       <li>
-        <a href="icons-boxicons.html">
-          <i class="bi bi-circle"></i><span>Boxicons</span>
+        <a href="delete_event.php">
+          <i class="bi bi-circle"></i><span>DELETE PAST EVENT</span>
         </a>
       </li>
+	   
     </ul>
   </li><!-- End Icons Nav -->
 

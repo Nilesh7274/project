@@ -27,15 +27,17 @@ if(mysqli_num_rows($res)>0)
 
 	$date=date('y-m-d');
 
-	$teacher_id=$_SESSION['admin_id'];
+	$teacher=$_SESSION['admin'];
+	$teacher_id=$teacher['admin_id'];
 	
-
 	$query_insert_attendance="insert into attendance values(null,'$teacher_id','$roll_no','$date')";
 
 	$result=mysqli_query($connect,$query_insert_attendance);
 
 	if($result)
+	{
 		echo"<script> alert('INSERTED SUCESSFULY');window.location='attendance-get.php';</script>";
+	}
 }
 else{
 	

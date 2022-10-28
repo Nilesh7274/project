@@ -382,22 +382,18 @@ if(!isset($_SESSION['student']))
     </a>
     <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
-        <a href="#">
-          <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+        <a href="event_index.php">
+          <i class="bi bi-circle"></i><span>UPCOMING EVENTS</span>
         </a>
       </li>
       <li>
-        <a href="#">
-          <i class="bi bi-circle"></i><span>Remix Icons</span>
+        <a href="memories_display.php">
+          <i class="bi bi-circle"></i><span>MEMORIES</span>
         </a>
       </li>
-      <li>
-        <a href="#">
-          <i class="bi bi-circle"></i><span>Boxicons</span>
-        </a>
-      </li>
+      
     </ul>
-  </li><!-- End Icons Nav -->
+  </li><!-- End event Nav -->
 
   <li class="nav-heading">Pages</li>
 
