@@ -8,13 +8,14 @@
 		?>
 		
 		<?php
-		$connect=mysqli_connect('localhost','root','','cloudclass');
+		include'conn.php';
+		//$conn=mysqli_connect('localhost','root','','cloudclass');
 		$c=0;
 		date_default_timezone_set("Asia/kolkata");
 		$date=date('y-m-d');
 		$query="select a.roll_no,s.name,s.div from attendance a left join students s on a.roll_no=s.rollno where a.date='$date'";
 		//$query="select roll_no from attendance where date='$date'"; 
-		$res=mysqli_query($connect,$query);
+		$res=mysqli_query($conn,$query);
 		
 		?>
 <main id="main" class="main">	<div class="card">

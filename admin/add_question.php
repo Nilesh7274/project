@@ -1,5 +1,6 @@
 <?php
- $conn=mysqli_connect("localhost","root",'','cloud_class'); 
+include 'conn.php';
+ //$conn=mysqli_connect("localhost","root",'','cloud_class'); 
 
   $question=$_REQUEST['question'];
   $option1=$_REQUEST['option1'];

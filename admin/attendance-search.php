@@ -8,8 +8,8 @@
 		?>
 	<?php
 			  
-			  //include 'db.php'
-			  $connect=mysqli_connect('localhost','root','','cloudclass');
+			  include 'conn.php';
+			  //$conn=mysqli_connect('localhost','root','','cloudclass');
 			  if(isset($_REQUEST['roll_no']))
 				  $roll_no=$_REQUEST['roll_no'];
 			  else
@@ -19,18 +19,18 @@
 			  $date=date('y-m-d');
 			  $get_working_days="select DISTINCT(date) from attendance where date between '2022-10-01' and '$date'";
 			 //$get_working_days="select DISTINCT(date) from attendance where date between '2022-10-01' and '2022-10-31'";
-				$result2=mysqli_query($connect,$get_working_days);
+				$result2=mysqli_query($conn,$get_working_days);
 			 $count_working_days=mysqli_num_rows($result2);
 			 
 			 
 			$q="select * from attendance where roll_no='$roll_no' and date between '2022-10-01' and '$date'";
 			 //$q="select * from attendance where roll_no='$roll_no' and date between '2022-10-01' and '2022-10-31'";
-			 $result=mysqli_query($connect,$q);
+			 $result=mysqli_query($conn,$q);
 			 $count=mysqli_num_rows($result);
 			 echo $count;
 			 
 			 $query_search_name="select a.roll_no,s.name from attendance a left join students s on a.roll_no=s.rollno where a.roll_no='$roll_no'";
-			 $attendance_result=mysqli_query($connect,$query_search_name);
+			 $attendance_result=mysqli_query($conn,$query_search_name);
 			 $row=mysqli_fetch_array($attendance_result);
 			 
 			  ?>

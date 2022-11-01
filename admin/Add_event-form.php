@@ -8,7 +8,8 @@
         $duration = $_POST["duration"];
         $info = $_POST["info"];
 
-        $conn=mysqli_connect('localhost','root','','cloudclass');
+        //$conn=mysqli_connect('localhost','root','','cloudclass');
+		include 'conn.php';
         // include "db.php";
 
         $q = "insert into event(event,venue,seats,date,duration,event_info) values('$event','$venue','$seats','$date','$duration','$info')";

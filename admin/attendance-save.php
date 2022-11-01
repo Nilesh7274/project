@@ -1,7 +1,7 @@
 <?php
 session_start();
-//include 'db.php'
-$connect=mysqli_connect('localhost','root','','cloudclass');
+include 'conn.php';
+//$connect=mysqli_connect('localhost','root','','cloudclass');
 
 /*if($connect)
 {
@@ -19,7 +19,7 @@ $roll_no=$_REQUEST['roll_no'];
 
 $query_get_roll_no="select * from students where rollno=$roll_no"; 
 
-$res=mysqli_query($connect,$query_get_roll_no);
+$res=mysqli_query($conn,$query_get_roll_no);
 
 if(mysqli_num_rows($res)>0)
 {
@@ -32,7 +32,7 @@ if(mysqli_num_rows($res)>0)
 	
 	$query_insert_attendance="insert into attendance values(null,'$teacher_id','$roll_no','$date')";
 
-	$result=mysqli_query($connect,$query_insert_attendance);
+	$result=mysqli_query($conn,$query_insert_attendance);
 
 	if($result)
 	{

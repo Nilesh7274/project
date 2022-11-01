@@ -44,10 +44,11 @@
 				else
 					$last_date=date('y-m-d');
 				
-		$connect=mysqli_connect('localhost','root','','cloudclass');
+			include'conn.php';
+		//$conn=mysqli_connect('localhost','root','','cloudclass');
 		$q="select * from attendance a left join students s on a.roll_no=s.rollno where  date between '$first_date' and '$last_date'";
 			 //$q="select * from attendance where roll_no='$roll_no' and date between '2022-10-01' and '2022-10-31'";
-			 $result=mysqli_query($connect,$q);
+			 $result=mysqli_query($conn,$q);
 			 
 			 
 			 $c=0;
