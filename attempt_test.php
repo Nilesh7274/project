@@ -8,7 +8,7 @@
 		?>
 
 <?php
-$conn=mysqli_connect('localhost','root','','cloud_class');
+include 'conn.php';
 /*if($conn)
 	echo"connected";
 else
