@@ -2,7 +2,7 @@
 
    include "header.php";
 
-   $conn=mysqli_connect('localhost','root','','cloudclass');
+   include 'conn.php';
 
     $q = "select *from memories";
     $res = mysqli_query($conn,$q);
