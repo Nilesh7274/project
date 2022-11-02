@@ -1,7 +1,4 @@
-<html>
-	<head>
-	</head>
-	<body>
+
 		<?php
 			//session_start();
 			include'header.php'
@@ -102,8 +99,7 @@
 			</main>
 
 		
-	</body>
-</html>
+	
 <?php
 			include'footer.php'
 		?>

@@ -324,24 +324,23 @@ if(!isset($_SESSION['student']))
 
   <li class="nav-item">
     <a class="nav-link " href="index.php">
-      <i class="bi bi-grid"></i>
-      <span>Dashboard</span>
+      <i class="bi bi-house-door"></i>
+      <span>HOME</span>
     </a>
   </li><!-- End Dashboard Nav -->
 
   <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>ATTENDANCE</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-           <li>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
             <a href="attendance-view.php">
               <i class="bi bi-circle"></i><span>VIEW ATTENDANCE</span>
             </a>
           </li>
-         
         </ul>
-      </li><!-- End Components Nav -->
+   </li><!-- End Charts Nav -->
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">

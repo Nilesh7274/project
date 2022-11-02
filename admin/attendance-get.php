@@ -1,8 +1,4 @@
-<html>
 
-	<head>
-	</head>
-	<body>
 		<?php
 			include'header.php'
 		?>
@@ -43,8 +39,7 @@
 		</main>
 			
 			
-	</body>
-</html>
+
 		
 		<?php
 			include'footer.php'
