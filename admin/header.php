@@ -18,13 +18,13 @@ if(!isset($_SESSION['admin']))
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Cloud Class</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../assets/img/favicon.png" rel="icon">
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/cloud.png" rel="icon">
+  <link href="../assets/img/cloud.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -57,7 +57,7 @@ if(!isset($_SESSION['admin']))
 
 <div class="d-flex align-items-center justify-content-between">
   <a href="index.html" class="logo d-flex align-items-center">
-    <img src="../assets/img/logo.png" alt="">
+    <img src="../assets/img/cloud.png" alt="">
     <span class="d-none d-lg-block">CloudClass</span>
   </a>
   <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -371,12 +371,12 @@ if(!isset($_SESSION['admin']))
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-journal-text"></i><span>Notes</span><i class="bi bi-chevron-down ms-auto"></i>
+      <i class="bi bi-journal-text"></i><span>NOTES</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
     <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       
         <a href="file.php">
-          <i class="bi bi-circle"></i><span>file create</span>
+          <i class="bi bi-circle"></i><span>FILE CREATE</span>
         </a>
       </li>
       
@@ -385,12 +385,12 @@ if(!isset($_SESSION['admin']))
 
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-layout-text-window-reverse"></i><span>Test</span><i class="bi bi-chevron-down ms-auto"></i>
+      <i class="bi bi-layout-text-window-reverse"></i><span>TEST</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
         <a href="add_test1.php">
-          <i class="bi bi-circle"></i><span>Add Test</span>
+          <i class="bi bi-circle"></i><span>ADD TEST</span>
         </a>
       </li>
       
@@ -400,7 +400,7 @@ if(!isset($_SESSION['admin']))
   
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-      <i class="bi bi-gem"></i><span>Event</span><i class="bi bi-chevron-down ms-auto"></i>
+      <i class="bi bi-gem"></i><span>EVENT</span><i class="bi bi-chevron-down ms-auto"></i>
     </a>
     <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
