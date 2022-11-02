@@ -1,7 +1,4 @@
-<html>
-	<head>
-	</head>
-	<body>
+
 		<?php
 			
 			include'header.php'
@@ -71,9 +68,7 @@
 		  </div>
 			</main>
 
-		
-	</body>
-</html>
+	
 <?php
 			include'footer.php'
 		?>
