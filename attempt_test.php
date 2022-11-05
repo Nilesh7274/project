@@ -15,19 +15,22 @@ else
 $query="select * from questions order by rand() limit 10";
 $res=mysqli_query($conn,$query);
 $c=1;
-echo "<form action='test-save.php' method='post'>";?>
+?>
+<main id="main" class="main">	<div class="card">
+<form action='test-save.php' method='post'>
 
 
 <?php
 while($row=mysqli_fetch_array($res))
 {?>
-	<br>
+	
 	
 	
 	<!--<div class="card text-dark bg-light mb-3" style="max-width: 48rem;">-->
-	<main id="main" class="main">	<div class="card">
+		
+	<div class="card">
 	<div class="card-body">
-  <div class="card-header"><?php echo "<b>".$c.".".$row[1]."</b><br>";?></div>
+  <div class="card-header" ><?php echo "<b>".$c.".".$row[1]."</b><br>";?></div>
   
     <h5 class="card-title"><?php echo "<input type='hidden' value='".$row[0]."' name='que_id[]'>"; ?>
 	<?php echo  " <input type='radio' name='ans_".$row[0]."' value='1' required>".$row[2]."<br>"; ?>
@@ -38,7 +41,7 @@ while($row=mysqli_fetch_array($res))
 	</div>
 	</div>
 
-	</main>
+	
 <?php
 	//echo "<br>";
 	//echo "<br>";
@@ -55,6 +58,7 @@ while($row=mysqli_fetch_array($res))
 ?>
 <center><input type='submit'></center>
 </form>
+</main>
 
 	
 
