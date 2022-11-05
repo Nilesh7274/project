@@ -418,6 +418,16 @@ if(!isset($_SESSION['admin']))
           <i class="bi bi-circle"></i><span>DELETE PAST EVENT</span>
         </a>
       </li>
+	   <li>
+        <a href="delete_memories.php">
+          <i class="bi bi-circle"></i><span>DELETE MEMORIES</span>
+        </a>
+      </li>
+      <li>
+        <a href="view_participants.php">
+          <i class="bi bi-circle"></i><span>INTRESTED  PARTICIPANTS</span>
+        </a>
+      </li>
 	   
     </ul>
   </li><!-- End Icons Nav -->
