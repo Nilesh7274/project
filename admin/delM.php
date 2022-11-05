@@ -1,6 +1,6 @@
 <?php
 
-$conn=mysqli_connect('localhost','root','','cloudclass');
+include 'conn.php';
 
 
 $id = $_REQUEST['id'];

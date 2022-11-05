@@ -1,6 +1,6 @@
 <?php
 
-$conn=mysqli_connect('localhost','root','','cloudclass');
+include 'conn.php';
 
 $event_id = $_REQUEST['event_id'];
 

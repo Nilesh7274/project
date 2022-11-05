@@ -1,8 +1,8 @@
 <?php
     include "header.php";
 
-    // include "db.php";
-    $conn=mysqli_connect('localhost','root','','cloudclass');
+    include 'conn.php';
+    // $conn=mysqli_connect('localhost','root','','cloudclass');
 
     $q = "select * from event";
     $res = mysqli_query($conn,$q);

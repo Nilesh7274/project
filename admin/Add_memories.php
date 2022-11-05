@@ -9,7 +9,7 @@
 
         echo $u = move_uploaded_file($temp_name,$dest);
 
-        $conn=mysqli_connect('localhost','root','','cloudclass');
+        include 'conn.php';
 
         $q = "insert into memories(event_name,img_path) values('$event','$dest')";
         $res = mysqli_query($conn,$q);

@@ -2,8 +2,8 @@
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
     
-        $conn=mysqli_connect('localhost','root','','cloudclass');
-        // include "db.php";
+        // $conn=mysqli_connect('localhost','root','','cloudclass');
+        include 'conn.php';
 
         $name = $_REQUEST['name'];
         $mobile = $_REQUEST['mobile'];
@@ -34,7 +34,7 @@
     <body>
         <?php
             include "header.php";
-            $conn=mysqli_connect('localhost','root','','cloudclass');
+            include 'conn.php';
             $q = "select * from event";
             $res = mysqli_query($conn,$q);
         ?>

@@ -1,7 +1,7 @@
 <?php
     include "header.php";
 
-    $conn=mysqli_connect('localhost','root','','cloudclass');
+    include 'conn.php';
 
     $q = "select *from participants";
     $res = mysqli_query($conn,$q);
