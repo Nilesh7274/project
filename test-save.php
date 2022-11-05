@@ -67,7 +67,8 @@ echo "<br>";?>
 }
 //echo"<h1>"."YOUR RESULT =".$c."/10"."<h1>";
 echo "<br>";
-echo "<span style='color:blue'><h2>". $_SESSION['student']." , your score is : =".$c."/10"."</h2></span>";
+						
+echo "<span style='color:blue'><h2>". $ro['name']." , your score is : =".$c."/10"."</h2></span>";
 ?>
  
 
