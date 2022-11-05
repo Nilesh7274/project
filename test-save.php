@@ -5,7 +5,9 @@
 
 
 
-<center> 
+<!--<center> -->
+<main id="main" class="main">	<div class="card">
+            <div class="card-body">
  <?php
 //echo "<pre>";
 //print_r($_REQUEST);
@@ -70,9 +72,13 @@ echo "<br>";
 						
 echo "<span style='color:blue'><h2>". $ro['name']." , your score is : =".$c."/10"."</h2></span>";
 ?>
+
+          </div>
+		  </div>
+		  </main>
  
 
-</center>
+<!--</center>-->
 
 		
 		<?php

@@ -1,11 +1,8 @@
-<html>
 
-	<head>
-	</head>
-	<body>
 		<?php
 			include'header.php'
 		?>
+		
 
 <?php
 include 'conn.php';
@@ -18,27 +15,30 @@ else
 $query="select * from questions order by rand() limit 10";
 $res=mysqli_query($conn,$query);
 $c=1;
-echo "<center><form action='test-save.php' method='post'>";?>
-<br>
-<br>
-<br>
+echo "<form action='test-save.php' method='post'>";?>
+
+
 <?php
 while($row=mysqli_fetch_array($res))
 {?>
 	<br>
 	
 	
-	<div class="card text-dark bg-light mb-3" style="max-width: 48rem;">
+	<!--<div class="card text-dark bg-light mb-3" style="max-width: 48rem;">-->
+	<main id="main" class="main">	<div class="card">
+	<div class="card-body">
   <div class="card-header"><?php echo "<b>".$c.".".$row[1]."</b><br>";?></div>
-  <div class="card-body">
+  
     <h5 class="card-title"><?php echo "<input type='hidden' value='".$row[0]."' name='que_id[]'>"; ?>
 	<?php echo  " <input type='radio' name='ans_".$row[0]."' value='1' required>".$row[2]."<br>"; ?>
 	<?php echo  " <input type='radio' name='ans_".$row[0]."' value='2'>".$row[3]."<br>"; ?>
 	<?php echo  " <input type='radio' name='ans_".$row[0]."' value='3'>".$row[4]."<br>"; ?>
 	<?php echo  " <input type='radio' name='ans_".$row[0]."' value='4'>".$row[5]."<br>"; ?> </h5> 
     
-  </div>
-</div>
+	</div>
+	</div>
+
+	</main>
 <?php
 	//echo "<br>";
 	//echo "<br>";
@@ -53,11 +53,11 @@ while($row=mysqli_fetch_array($res))
 	++$c;
 }
 ?>
-<input type='submit'>
+<center><input type='submit'></center>
 </form>
-</center>
-</body>
-</html>
+
+	
+
 <?php
 			include'footer.php'
 		?>
