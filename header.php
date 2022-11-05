@@ -386,11 +386,6 @@ if(!isset($_SESSION['student']))
           <i class="bi bi-circle"></i><span>MEMORIES</span>
         </a>
       </li>
-      <li>
-        <a href="participants.php">
-          <i class="bi bi-circle"></i><span>WANT TO PARTICIPATE</span>
-        </a>
-      </li>
       
     </ul>
   </li><!-- End event Nav -->
