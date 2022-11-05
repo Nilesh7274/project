@@ -1,9 +1,4 @@
 
-<html>
-
-	<head>
-	</head>
-	<body>
 		<?php
 			include'header.php'
 		?>
@@ -15,8 +10,9 @@
 //echo "<pre>";
 //print_r($_REQUEST);
 
-$ques=$_REQUEST['que_id'];
-$conn=mysqli_connect('localhost','root','','cloud_class');
+$ques=$_REQUEST['que_id']; 
+include 'conn.php';
+//$conn=mysqli_connect('localhost','root','','cloud_class');
 /*if($conn)
 	echo"connected";
 else
@@ -71,13 +67,12 @@ echo "<br>";?>
 }
 //echo"<h1>"."YOUR RESULT =".$c."/10"."<h1>";
 echo "<br>";
-echo "<span style='color:blue'><h2>". $_SESSION['name']." , your score is : =".$c."/10"."</h2></span>";
+echo "<span style='color:blue'><h2>". $_SESSION['student']." , your score is : =".$c."/10"."</h2></span>";
 ?>
  
 
 </center>
-</body>
-</html>
+
 		
 		<?php
 			include'footer.php'
