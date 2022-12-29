@@ -1,6 +1,10 @@
 <?php
+<<<<<<< Updated upstream
 include 'conn.php';
  //$conn=mysqli_connect("localhost","root",'','cloud_class'); 
+=======
+ $conn=mysqli_connect("localhost","root",'','cloud_class'); 
+>>>>>>> Stashed changes
 
   $question=$_REQUEST['question'];
   $option1=$_REQUEST['option1'];

@@ -390,10 +390,17 @@ if(!isset($_SESSION['admin']))
     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
         <a href="add_test1.php">
+<<<<<<< Updated upstream
           <i class="bi bi-circle"></i><span>ADD TEST</span>
         </a>
       </li>
       
+=======
+          <i class="bi bi-circle"></i><span>add test</span>
+        </a>
+      </li>
+     
+>>>>>>> Stashed changes
     </ul>
   </li><!-- End Tables Nav -->
 

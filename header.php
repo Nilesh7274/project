@@ -363,7 +363,11 @@ if(!isset($_SESSION['student']))
     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
       <li>
         <a href="attempt_test.php">
+<<<<<<< Updated upstream
           <i class="bi bi-circle"></i><span>START TEST</span>
+=======
+          <i class="bi bi-circle"></i><span>start test</span>
+>>>>>>> Stashed changes
         </a>
       </li>
       
